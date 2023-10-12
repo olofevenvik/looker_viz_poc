@@ -42,7 +42,9 @@ const vis = {
         map_element.id = "leafletMap";
         map_element.setAttribute("style","height:" + chartHeight + "px");
 
-        var map = L.map('leafletMap').setView([40.71, -74.01], 9);
+        //var map = L.map('leafletMap').setView([40.71, -74.01], 9);
+        var map = L.map('leafletMap').setView([55.71, 13.17], 7);
+
         
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {
             foo: 'bar', 
