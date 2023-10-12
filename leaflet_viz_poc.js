@@ -47,14 +47,14 @@ const vis = {
 
         // As an alternative to Looker have a location type,
         // we can use tags (e.g. "geojson") in LookML
-        for (let d = 0; d < dimensions.length; d++) {
-            if (dimensions[d].tags.includes("geojson")) {
-                for (let row = 0; row < data.length; row++) {
-                    geojson_value = JSON.parse(data[row][dimensions[d].name].value);
-                    L.geoJSON(geojson_value).addTo(map);
-                }                
-            }
-        }
+        // for (let d = 0; d < dimensions.length; d++) {
+        //     if (dimensions[d].tags.includes("geojson")) {
+        //         for (let row = 0; row < data.length; row++) {
+        //             geojson_value = JSON.parse(data[row][dimensions[d].name].value);
+        //             L.geoJSON(geojson_value).addTo(map);
+        //         }                
+        //     }
+        // }
 
         done();
     }
