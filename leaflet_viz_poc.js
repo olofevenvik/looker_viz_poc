@@ -9,9 +9,14 @@ const vis = {
         var csslink  = document.createElement('link');
         csslink.rel  = 'stylesheet';
         csslink.type = 'text/css';
-        csslink.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        csslink.href = 'https://unpkg.com/leaflet@1.4.0/dist/leaflet.css';
         csslink.crossorigin = "";
         document.head.appendChild(csslink);
+
+        var scriptlink  = document.createElement('script');
+        scriptlink.src  = 'https://unpkg.com/leaflet@1.4.0/dist/leaflet.js';
+        scriptlink.crossorigin = "";
+        document.head.appendChild(scriptlink);
       
         this.container = element.appendChild(document.createElement("div"));
         this.container.id = "leafletMap";
